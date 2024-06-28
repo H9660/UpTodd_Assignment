@@ -33,6 +33,7 @@
 .heading-buttons li:last-child {
   background-color: #ff5766;
   padding: 10px;
+  margin-right: -10px;
   border-radius: 7px;
   color: white;
 }
@@ -152,6 +153,7 @@ h3 {
 }
 
 .start-now h3 {
+  margin-left: 30px;
   height: auto;
   text-align: left;
   margin-right:50px;
@@ -162,7 +164,7 @@ h3 {
   width: 150px;
   background-color: #ff5766;
   color: white;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .testmonials{
@@ -187,10 +189,7 @@ h3 {
 }
 
 .testmonials img{
-  /* width: 50%; */
-  /* height: auto; */
   margin-top: 50px;
-  /* margin-right: 100%; */
 }
 
 @media (max-width: 785px){
@@ -199,7 +198,7 @@ h3 {
   }
 
   .header-buttons li:last-child{
-    margin-right: 0;
+    right: 0px;
   }
 
   .header img {
@@ -212,18 +211,25 @@ h3 {
     flex-direction: column;
   }
   .start-now{
-    justify-content: center;
+    flex-direction: column;
   }
 
   .start-now h3{
+    margin: auto 20px;
     text-align: center;
   }
   
+  .start-now-button{
+    margin-top: 30px;
+    width: 30%; 
+  }
   .testmonials{
     margin-top: 40px;
+    justify-content: center;
   }
   .testmonials h2 {
-    margin-left: 20px;
+    margin: auto;
+    margin-top: 20px;
     font-size: 26px; 
     text-align: left;
   }
@@ -231,5 +237,6 @@ h3 {
   .testmonials ul{
     flex-direction: column;
   }
+
 
 }
