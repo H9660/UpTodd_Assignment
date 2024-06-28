@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/book-demo", {
+      const response = await fetch("https://uptodd-backend-aq9tpcul6-h9660s-projects.vercel.app/api/book-demo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
