@@ -27,7 +27,7 @@ app.post('/api/book-demo', async (req, res) => {
         res.status(201).json(savedSession); // Respond with the saved user object
     } catch (err) {
         console.error('Error creating user:', err);
-        res.status(500).json({ error: 'Failed to create user' });
+        res.status(500).json({ error: 'Failed to create demo session' });
     }
 });
 
