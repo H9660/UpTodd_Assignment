@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-styles.css"> <!-- Link to your CSS file -->
+    <title>Book Demo Session</title>
+</head>
+<body>
+    <div id="overlay" class="overlay"></div>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Book Demo Session</h2>
+            <p>Only 4 Spots Left!</p>
+            <span class="close-btn">&times;</span>
+        </div>
+        <form id="demoForm" action="#" method="post">
+            <input type="text" placeholder="Rahul Sharma" required>
+            <input type="email" placeholder="Email Id" required>
+            <div class="phone-container">
+                <select>
+                    <option value="+91">+91</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="tel" placeholder="Enter mobile number" required>
+            </div>
+            <select required>
+                <option value="" disabled selected>Select Baby Stage</option>
+                <!-- Add options as needed -->
+            </select>
+            <button type="submit">Apply Now</button>
+        </form>
+        <div class="form-footer">
+            <p>UpTodd's <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a> for complete data security</p>
+        </div>
+    </div>
+</body>
+<script src="client.js">
+</script>
+</html>
