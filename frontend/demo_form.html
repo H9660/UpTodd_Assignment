@@ -7,7 +7,6 @@
     <title>Book Demo Session</title>
 </head>
 <body>
-    <div id="overlay" class="overlay"></div>
     <div class="form-container">
         <div class="form-header">
             <h2>Book Demo Session</h2>
@@ -15,18 +14,23 @@
             <span class="close-btn">&times;</span>
         </div>
         <form id="demoForm" action="#" method="post">
-            <input type="text" placeholder="Rahul Sharma" required>
-            <input type="email" placeholder="Email Id" required>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email Id" required>
             <div class="phone-container">
                 <select>
                     <option value="+91">+91</option>
+                    <option value="+91">+971</option>
+                    <option value="+91">+1</option>
+                    <option value="+91">+268</option>
                     <!-- Add more country codes as needed -->
                 </select>
-                <input type="tel" placeholder="Enter mobile number" required>
+                <input type="tel" name="phone" placeholder="Enter your mobile number" required>
             </div>
-            <select required>
-                <option value="" disabled selected>Select Baby Stage</option>
-                <!-- Add options as needed -->
+            <select name="babyStage" required>
+                <option value="" selected>Select Baby Stage</option>
+                <option value="Stage1" selected>Stage 1</option>
+                <option value="Stage2" selected>Stage 2</option>
+                <option value="Stage3" selected>Stage 3</option>
             </select>
             <button type="submit">Apply Now</button>
         </form>

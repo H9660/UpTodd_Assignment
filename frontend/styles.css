@@ -1,6 +1,8 @@
 * {
   font-family: "DM Sans";
   max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .header {
@@ -19,6 +21,10 @@
 .heading-buttons {
   display: flex;
   list-style: none;
+}
+
+.heading-buttons{
+  margin-right: 30px;
 }
 
 .heading-buttons li {
@@ -54,7 +60,6 @@
 
 .achiever-section h1,
 h3 {
-  position: relative;
   font-weight: 500;
 }
 
@@ -73,7 +78,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .development-wonders h2 {
@@ -85,20 +89,6 @@ h3 {
 
 .development-wonders img {
   margin-bottom: 40px;
-}
-
-.child-images, .analytics-images {
-  align-items: center;
-  display: flex;
-  list-style: none;
-}
-
-.analytics-images li{
-   margin: auto 50px;
-}
- 
-.child-images li {
-  padding: 5px;
 }
 
 .happy-parents,
@@ -121,6 +111,24 @@ h3 {
   font-size: 24px;
 }   
 
+.child-images, .analytics-images {
+  align-items: center;
+  display: flex;
+  list-style: none;
+}
+
+.child-images li {
+  padding: 5px;
+}
+
+.analytics-images{
+  margin-bottom: 100px;
+}
+.analytics-images li{
+   margin: auto 50px;
+ 
+}
+
 .see-all-button,
 .start-now-button {
   border: 1px solid #ff3f4e;
@@ -138,9 +146,21 @@ h3 {
   font-weight: 400;
   font-size: 40px;
 }
+
+.brilliant-minds ul{
+  margin-bottom: 50px;
+}
+
+.child-images img, .brilliant-minds img{
+  box-shadow: 0px 1px 2px grey;
+  margin: auto 10px;
+  border-radius: 10px;
+  border: transparent;
+}
 .see-all-button {
   margin-bottom: 40px;
 }
+
 .start-now {
   padding: 15px;
   margin-bottom: -60px;
@@ -148,7 +168,7 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(#4b5adb, #5a40c4);
+  background-color: #5A40C4;
   width: 100%;
   max-height: 200px;
   color: white;
@@ -200,7 +220,17 @@ h3 {
   .child-images ul{
     flex-direction: column;
   }
+  
+  .development-wonders ul{
+    flex-direction: column;
+  }
 
+  .development-wonders ul li:nth-child(2), .development-wonders ul li:nth-child(4){
+    /* background-image: url('assets/images/down.png') */
+    transform: rotate(90deg);
+     
+  }
+  
   .header-buttons li:last-child{
     right: 0px;
   }
